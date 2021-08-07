@@ -1,7 +1,8 @@
 /* Others */
 .card-text {
-    width: 100% !important;
+    width: 90% !important;
     margin: auto;
+    font-size:14px;
 }
 .about {
     min-height:420px;
