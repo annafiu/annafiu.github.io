@@ -48,7 +48,7 @@
 .jumbotron {
     background:transparent;
     min-height: 500px;
-    background-size: contain;
+    background-size: cover;
      /* Create the parallax scrolling effect */
      background-attachment: fixed;
      background-position: top center;
