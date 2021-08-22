@@ -1,4 +1,8 @@
 /* Others */
+footer {
+    margin:10px
+}
+
 .card-text {
     width: 90% !important;
     margin: auto;
@@ -120,4 +124,3 @@
        padding-top:  100px;
        padding-bottom: 120px;
    }
-  

@@ -1,3 +1,5 @@
 # annafiu.github.io
-nothing
-just creating portfolio website
+
+I'm just creating portfolio website
+
+:)
