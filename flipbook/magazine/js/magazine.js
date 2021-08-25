@@ -48,7 +48,7 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'https://raw.githubusercontent.com/annafiu/img/main/' +  page + '.jpg');
+	img.attr('src', 'pages' +  page + '.jpg');
 
 	loadRegions(page, pageElement);
 
