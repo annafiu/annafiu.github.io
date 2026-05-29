@@ -1,40 +1,31 @@
-// Floating label headings for the contact form
-$(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-    });
-});
-
-// Navigation Scripts to Show Header on Scroll-Up
-jQuery(document).ready(function($) {
-    var MQL = 1170;
-
-    //primary navigation slide-in effect
-    if ($(window).width() > MQL) {
-        var headerHeight = $('.navbar-custom').height();
-        $(window).on('scroll', {
-                previousTop: 0
-            },
-            function() {
-                var currentTop = $(window).scrollTop();
-                //check if user is scrolling up
-                if (currentTop < this.previousTop) {
-                    //if scrolling up...
-                    if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
-                        $('.navbar-custom').addClass('is-visible');
-                    } else {
-                        $('.navbar-custom').removeClass('is-visible is-fixed');
-                    }
-                } else if (currentTop > this.previousTop) {
-                    //if scrolling down...
-                    $('.navbar-custom').removeClass('is-visible');
-                    if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
-                }
-                this.previousTop = currentTop;
-            });
+// Ensure viewport meta tag is present for mobile responsiveness
+(function() {
+    if (!document.querySelector('meta[name="viewport"]')) {
+        var meta = document.createElement('meta');
+        meta.name = "viewport";
+        meta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
+        document.getElementsByTagName('head')[0].appendChild(meta);
     }
-});
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        // Handle image scaling
+        var imgs = document.querySelectorAll('img');
+        imgs.forEach(function(img) {
+            img.style.maxWidth = '100%';
+            img.style.height = 'auto';
+        });
+
+        // Wrap tables safely
+        var tables = document.querySelectorAll('table');
+        tables.forEach(function(table) {
+            if (!table.parentNode.classList.contains('table-responsive')) {
+                var wrapper = document.createElement('div');
+                wrapper.className = 'table-responsive';
+                wrapper.style.overflowX = 'auto';
+                wrapper.style.width = '100%';
+                table.parentNode.insertBefore(wrapper, table);
+                wrapper.appendChild(table);
+            }
+        });
+    });
+})();
