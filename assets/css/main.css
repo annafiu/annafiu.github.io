@@ -100,7 +100,7 @@ main { padding-top: 52px; min-height: 100vh; }
 .back-link {
   display: inline-block; font-size: 12px; color: var(--muted);
   text-decoration: none; letter-spacing: 0.02em;
-  transition: color var(--t); margin-bottom: 40px;width: 100%;text-align: left;
+  transition: color var(--t); margin-bottom: 40px; text-align: left; width: 100%; 
 }
 .back-link:hover { color: var(--text); }
 
