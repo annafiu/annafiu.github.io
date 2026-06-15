@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>green cluster housing — farrij annafi'u</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+.project-body { max-width: 900px; margin: 0 auto; padding: 56px 40px 80px; }
+.project-subtitle { font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-bottom: 12px; text-align: center; }
+.project-title { font-size: clamp(26px, 4vw, 40px); font-weight: 300; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 48px; text-align: center; }
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">farrij annafi'u</a>
+  <div class="nav-links">
+    <a href="/works" data-nav="works">works</a>
+    <a href="/resume" data-nav="resume">resume</a>
+    <a href="/journal" data-nav="journal">journal</a>
+    <a href="/about" data-nav="about">about</a>
+    <a href="/contact" data-nav="contact">contact</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/works">works</a>
+  <a href="/resume">resume</a>
+  <a href="/journal">journal</a>
+  <a href="/about">about</a>
+  <a href="/contact">contact</a>
+</div>
+<main>
+  <div class="project-hero" onclick="openLightbox(this.querySelector('img').src)">
+    <img src="/assets/img/works/green-cluster-housing/hero.jpg"
+         alt="green cluster housing"
+         onerror="this.parentElement.style.background='#f2b0d4'; this.style.display='none'">
+  </div>
+  <div class="project-body">
+    <a class="back-link" href="/works">← back to works</a>
+    <div class="project-subtitle">sustainable residential masterplan proposal</div>
+    <div class="project-title">green cluster housing</div>
+    <div class="project-cols">
+      <div class="body-text">
+        <p>A masterplan proposal for an eco-conscious suburban residential cluster. The "green cluster" concept establishes a shared, central park space as the communal heart, with pedestrian-only paths connecting all homes without intersecting vehicular driveways.</p>
+<p>The comprehensive study spans 24 residential units across types 60, 90, and 120, fully integrating a localized rainwater harvesting system and community-scaled solar arrays.</p>
+      </div>
+      <div>
+        <div class="meta-row"><span class="meta-key">year</span><span class="meta-val">2021</span></div>
+<div class="meta-row"><span class="meta-key">type</span><span class="meta-val">concept · masterplan</span></div>
+<div class="meta-row"><span class="meta-key">units</span><span class="meta-val">24 units</span></div>
+<div class="meta-row"><span class="meta-key">site area</span><span class="meta-val">±1.2 ha</span></div>
+<div class="meta-row"><span class="meta-key">status</span><span class="meta-val">concept</span></div>
+      </div>
+    </div>
+    <span class="project-gallery-label">gallery</span>
+    <div class="project-gallery">
+      <!-- Add images as: /assets/img/works/green-cluster-housing/gallery-1.jpg etc. -->
+      <!-- Example (remove onerror placeholders once you add real photos):
+      <img src="/assets/img/works/green-cluster-housing/gallery-1.jpg" alt="" class="wide">
+      <img src="/assets/img/works/green-cluster-housing/gallery-2.jpg" alt="">
+      <img src="/assets/img/works/green-cluster-housing/gallery-3.jpg" alt="">
+      -->
+      <div style="grid-column:span 2; aspect-ratio:16/9; background:#f2b0d4; display:flex; align-items:center; justify-content:center;">
+        <span style="font-size:12px; color:#888; font-family:var(--sans); font-weight:300;">add gallery photos to /assets/img/works/green-cluster-housing/</span>
+      </div>
+    </div>
+    <div class="post-nav" style="margin-top:64px; padding-top:40px;">
+      <a href="/works/warung-kopi-interior">← warung kopi interior</a>
+      <span></span>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img src="" alt="">
+</div>
+
+<script src="/assets/js/nav.js"></script>
+<script src="/assets/js/lightbox.js"></script>
+</body>
+</html>

@@ -1,149 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Annafiu - About</title>
-    <link rel="icon" type="image/png" href="/img/favicon.png"/>
-    <!-- Bootstrap Core CSS -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="/css/clean-blog.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>about — farrij annafi'u</title>
+<meta name="description" content="About Farrij Annafi'u — architectural designer based in Yogyakarta, Indonesia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="/">Annafiu</a>
-            </div>
+<nav>
+  <a class="nav-logo" href="/">farrij annafi'u</a>
+  <div class="nav-links">
+    <a href="/works" data-nav="works">works</a>
+    <a href="/resume" data-nav="resume">resume</a>
+    <a href="/journal" data-nav="journal">journal</a>
+    <a href="/about" data-nav="about">about</a>
+    <a href="/contact" data-nav="contact">contact</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/journal">Journal</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/works">works</a>
+  <a href="/resume">resume</a>
+  <a href="/journal">journal</a>
+  <a href="/about">about</a>
+  <a href="/contact">contact</a>
+</div>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image:  url('/img/about-bg1.jpg');background-position: bottom right;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>About Me</h1>
-                        <hr class="small">
-                        <span class="subheading">This is what I do.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<main>
+  <div class="page-header" style="text-align:center; max-width:900px; margin:0 auto;">
+    <span class="page-label">about me</span>
+  </div>
+  <div class="content-wrap" style="max-width:900px;">
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Hi! my name is Farrij Tri Annafi'u, an architecture student at a university in the city of Surakarta, Indonesia. I was born and currently living in Magetan, Indonesia. I've been blogging since 2013. I like to listen to music, running, blogging, reading and doing computer stuff.</p>
-            </div>
-        </div>
+    <div class="about-photo">
+      <img src="/assets/img/about.jpg" alt="Farrij Annafi'u"
+           onerror="this.parentElement.style.background='var(--border)'; this.style.display='none'">
     </div>
 
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">&copy; 2021 Annafiu</p>
-                </div>
-            </div>
+    <div class="two-col">
+      <!-- LEFT -->
+      <div>
+        <div class="section-block">
+          <div class="body-text">
+            <p>Hello, I am Farrij Annafi'u — an architectural designer based in Yogyakarta, Indonesia.</p>
+            <p>I handle the entire design continuum: from initial concept development and 3D modeling to technical drafting and detailed construction cost estimation.</p>
+            <p>Beyond active projects, I enjoy exploring new ways to enhance design workflows — integrating AI tools, implementing cloud collaboration, and writing about real-world field experiences.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+      <!-- RIGHT -->
+      <div>
+        <div class="section-block">
+          <span class="section-label">details</span>
+          <div class="detail-row"><span class="detail-key">location</span><span class="detail-val">yogyakarta, indonesia</span></div>
+          <div class="detail-row"><span class="detail-key">focus</span><span class="detail-val">residential &amp; commercial design</span></div>
+          <div class="detail-row"><span class="detail-key">languages</span><span class="detail-val">bahasa indonesia, english</span></div>
+          <div class="detail-row"><span class="detail-key">freelance</span><span class="detail-val">available · upwork &amp; direct</span></div>
+        </div>
+        <div class="section-block">
+          <span class="section-label">tools</span>
+          <div class="tool-row"><span>sketchup</span><span class="tool-type">3d modeling</span></div>
+          <div class="tool-row"><span>autocad</span><span class="tool-type">technical drawing</span></div>
+          <div class="tool-row"><span>lumion</span><span class="tool-type">rendering</span></div>
+          <div class="tool-row"><span>excel / google sheets</span><span class="tool-type">cost estimation</span></div>
+          <div class="tool-row"><span>google drive</span><span class="tool-type">cloud collaboration</span></div>
+          <div class="tool-row"><span>ai tools</span><span class="tool-type">workflow automation</span></div>
+        </div>
+      </div>
+    </div>
 
-    <!-- jQuery -->
-    <script src="/vendor/jquery/jquery.min.js"></script>
+  </div>
+</main>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="/js/jqBootstrapValidation.js"></script>
-    <script src="/js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="/js/clean-blog.min.js"></script>
-
+<script src="/assets/js/nav.js"></script>
 </body>
-
 </html>

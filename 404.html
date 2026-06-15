@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>farrij annafi'u</title>
+<script>
+  // GitHub Pages SPA routing trick
+  // Saves the current URL to sessionStorage and redirects to root
+  // The index.html will then pick it up and navigate to the correct page
+  var path = window.location.pathname;
+  sessionStorage.redirect = window.location.href;
+  window.location.replace('/');
+</script>
+</head>
+<body></body>
+</html>

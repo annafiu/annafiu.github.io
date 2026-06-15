@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>forma studio fit-out — farrij annafi'u</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+.project-body { max-width: 900px; margin: 0 auto; padding: 56px 40px 80px; }
+.project-subtitle { font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-bottom: 12px; text-align: center; }
+.project-title { font-size: clamp(26px, 4vw, 40px); font-weight: 300; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 48px; text-align: center; }
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">farrij annafi'u</a>
+  <div class="nav-links">
+    <a href="/works" data-nav="works">works</a>
+    <a href="/resume" data-nav="resume">resume</a>
+    <a href="/journal" data-nav="journal">journal</a>
+    <a href="/about" data-nav="about">about</a>
+    <a href="/contact" data-nav="contact">contact</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/works">works</a>
+  <a href="/resume">resume</a>
+  <a href="/journal">journal</a>
+  <a href="/about">about</a>
+  <a href="/contact">contact</a>
+</div>
+<main>
+  <div class="project-hero" onclick="openLightbox(this.querySelector('img').src)">
+    <img src="/assets/img/works/forma-studio-fit-out/hero.jpg"
+         alt="forma studio fit-out"
+         onerror="this.parentElement.style.background='#b0d4f2'; this.style.display='none'">
+  </div>
+  <div class="project-body">
+    <a class="back-link" href="/works">← back to works</a>
+    <div class="project-subtitle">office & design studio fit-out</div>
+    <div class="project-title">forma studio fit-out</div>
+    <div class="project-cols">
+      <div class="body-text">
+        <p>A comprehensive interior fit-out project for an architectural design studio in Jakarta. This 120m² space was transformed into a clean, highly functional workspace with a dedicated client presentation area that remains acoustically isolated yet visually connected.</p>
+<p>Dominant materials include polished concrete, frosted glass, and natural wood accents. The lighting is meticulously layered — separating ambient, task, and accent fixtures — to fully support creative production.</p>
+      </div>
+      <div>
+        <div class="meta-row"><span class="meta-key">location</span><span class="meta-val">south jakarta</span></div>
+<div class="meta-row"><span class="meta-key">year</span><span class="meta-val">2023</span></div>
+<div class="meta-row"><span class="meta-key">type</span><span class="meta-val">commercial · interior</span></div>
+<div class="meta-row"><span class="meta-key">area</span><span class="meta-val">±120 m²</span></div>
+<div class="meta-row"><span class="meta-key">client</span><span class="meta-val">forma studio</span></div>
+<div class="meta-row"><span class="meta-key">status</span><span class="meta-val">completed</span></div>
+      </div>
+    </div>
+    <span class="project-gallery-label">gallery</span>
+    <div class="project-gallery">
+      <!-- Add images as: /assets/img/works/forma-studio-fit-out/gallery-1.jpg etc. -->
+      <!-- Example (remove onerror placeholders once you add real photos):
+      <img src="/assets/img/works/forma-studio-fit-out/gallery-1.jpg" alt="" class="wide">
+      <img src="/assets/img/works/forma-studio-fit-out/gallery-2.jpg" alt="">
+      <img src="/assets/img/works/forma-studio-fit-out/gallery-3.jpg" alt="">
+      -->
+      <div style="grid-column:span 2; aspect-ratio:16/9; background:#b0d4f2; display:flex; align-items:center; justify-content:center;">
+        <span style="font-size:12px; color:#888; font-family:var(--sans); font-weight:300;">add gallery photos to /assets/img/works/forma-studio-fit-out/</span>
+      </div>
+    </div>
+    <div class="post-nav" style="margin-top:64px; padding-top:40px;">
+      <a href="/works/randugede-house">← randugede house</a>
+      <a href="/works/micro-housing-study">micro housing study →</a>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img src="" alt="">
+</div>
+
+<script src="/assets/js/nav.js"></script>
+<script src="/assets/js/lightbox.js"></script>
+</body>
+</html>

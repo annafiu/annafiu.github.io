@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>works — farrij annafi'u</title>
+<meta name="description" content="Portfolio of architectural projects by Farrij Annafi'u — residential, commercial, concept, and interior design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">farrij annafi'u</a>
+  <div class="nav-links">
+    <a href="/works" data-nav="works">works</a>
+    <a href="/resume" data-nav="resume">resume</a>
+    <a href="/journal" data-nav="journal">journal</a>
+    <a href="/about" data-nav="about">about</a>
+    <a href="/contact" data-nav="contact">contact</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/works">works</a>
+  <a href="/resume">resume</a>
+  <a href="/journal">journal</a>
+  <a href="/about">about</a>
+  <a href="/contact">contact</a>
+</div>
+
+<main>
+  <div class="filter-bar">
+    <button class="filter-tag active" data-filter="all">all</button>
+    <button class="filter-tag" data-filter="residential">residential</button>
+    <button class="filter-tag" data-filter="commercial">commercial</button>
+    <button class="filter-tag" data-filter="concept">concept</button>
+    <button class="filter-tag" data-filter="interior">interior</button>
+  </div>
+
+  <div class="portfolio-grid" id="portfolioGrid">
+
+    <a class="port-item" href="/works/randugede-house" data-cat="residential"
+       style="--port-color:#f2c4b0;">
+      <div class="port-info">
+        <div class="port-info-title">randugede house</div>
+        <div class="port-info-tags">residential · 2024 · yogyakarta</div>
+      </div>
+    </a>
+
+    <a class="port-item" href="/works/forma-studio-fit-out" data-cat="commercial"
+       style="--port-color:#b0d4f2;">
+      <div class="port-info">
+        <div class="port-info-title">forma studio fit-out</div>
+        <div class="port-info-tags">commercial · 2023 · jakarta</div>
+      </div>
+    </a>
+
+    <a class="port-item" href="/works/micro-housing-study" data-cat="concept"
+       style="--port-color:#c4f2b0;">
+      <div class="port-info">
+        <div class="port-info-title">micro housing study</div>
+        <div class="port-info-tags">concept · 2023</div>
+      </div>
+    </a>
+
+    <a class="port-item" href="/works/villa-prambanan" data-cat="residential"
+       style="--port-color:#f2f0b0;">
+      <div class="port-info">
+        <div class="port-info-title">villa prambanan</div>
+        <div class="port-info-tags">residential · 2022 · sleman</div>
+      </div>
+    </a>
+
+    <a class="port-item" href="/works/warung-kopi-interior" data-cat="interior"
+       style="--port-color:#d4b0f2;">
+      <div class="port-info">
+        <div class="port-info-title">warung kopi interior</div>
+        <div class="port-info-tags">interior · commercial · 2022</div>
+      </div>
+    </a>
+
+    <a class="port-item" href="/works/green-cluster-housing" data-cat="concept"
+       style="--port-color:#f2b0d4;">
+      <div class="port-info">
+        <div class="port-info-title">green cluster housing</div>
+        <div class="port-info-tags">concept · masterplan · 2021</div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<script src="/assets/js/nav.js"></script>
+<script>
+  // Category filter
+  document.querySelectorAll('.filter-tag').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-tag').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.getAttribute('data-filter');
+      document.querySelectorAll('.port-item').forEach(function(item) {
+        if (filter === 'all' || item.getAttribute('data-cat') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
